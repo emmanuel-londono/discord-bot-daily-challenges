@@ -1,7 +1,7 @@
-import SlashCommandBuilder from 'discord.js'
+import {SlashCommandBuilder} from 'discord.js'
 
 
-	const serverData = new SlashCommandBuilder()
+	const data = new SlashCommandBuilder()
 		.setName('server')
 		.setDescription('Provides information about the server.');
 
@@ -11,4 +11,4 @@ import SlashCommandBuilder from 'discord.js'
 		await interaction.reply(`This server is ${interaction.guild.name} and has ${interaction.guild.memberCount} members.`);
 	};
 
-    export default {serverData, execute}
+    export default {data, execute}

@@ -1,7 +1,7 @@
-import SlashCommandBuilder from 'discord.js'
+import {SlashCommandBuilder} from 'discord.js'
 
 
-	const userData = new SlashCommandBuilder()
+	const data = new SlashCommandBuilder()
 		.setName('user')
 		.setDescription('Provides information about the user.');
 
@@ -11,4 +11,4 @@ import SlashCommandBuilder from 'discord.js'
 		await interaction.reply(`This command was run by ${interaction.user.username}, who joined on ${interaction.member.joinedAt}.`);
 	};
 
-    export default {userData, execute}
+    export default {data, execute}
