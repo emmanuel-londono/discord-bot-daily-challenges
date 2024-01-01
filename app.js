@@ -2,13 +2,14 @@ import { Client, Events, GatewayIntentBits, Collection } from 'discord.js'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath, pathToFileURL  } from 'url'
+import config from "./config.json"  assert { type: 'json' };
 
 // Function to run the app
 const runApp = () => {
   // Convert the URL to a directory path
   const __dirname = path.dirname(fileURLToPath(import.meta.url))
-  const token = process.env.TOKEN
-  // Create a new client instance
+  const token = config.token
+    // Create a new client instance
   const client = new Client({ intents: [GatewayIntentBits.Guilds] })
 
   client.commands = new Collection();
