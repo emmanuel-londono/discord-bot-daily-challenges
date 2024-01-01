@@ -1,7 +1,6 @@
 {
   "name": "discord-bot-daily-challenges",
   "version": "1.0.0",
-  "type": "module",
   "description": "A multi-use discord bot that can be invited into any server.  Creates a daily challenge.",
   "main": "app.js",
   "scripts": {
